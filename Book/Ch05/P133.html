@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        let count = 0;
+
+        myFnc();
+
+        function myFnc(){   // 함수문 호출이 먼저 나와도 호이스팅 방식이 적용되어 정상적으로 함수를 호출합니다.
+            count++;
+            document.write("hello "+count,"<br/>");
+        }
+        myFnc();
+
+        let theFnc = function(){
+            count++;
+            document.write("bye "+count,"<br/>");
+        }
+
+        theFnc();
+    </script>
+</body>
+</html>
